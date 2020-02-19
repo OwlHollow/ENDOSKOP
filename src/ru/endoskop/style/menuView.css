@@ -1,0 +1,6 @@
+.label:focused{
+    -fx-background-color: #4EA6A6;
+    -fx-background-radius: 2;
+    -fx-border-radius: 2;
+}
+

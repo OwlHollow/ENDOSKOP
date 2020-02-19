@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="card" fx:id="root" alignment="TOP_CENTER" onKeyPressed="#onKeyPressed" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.HistocytologyCardViewController">
+   <children>
+      <Label id="medium-label" text="ГАУЗ НЦРМБ">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </Label>
+      <Label id="medium-label" text="ПРОТОКОЛ ЭНДОСКОПИЧЕСКОГО ИССЛЕДОВАНИЯ">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </Label>
+      <GridPane alignment="CENTER" hgap="10.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="NEVER" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Дата:">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Номер Исслед:" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Исследование:" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Пациент:" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Дата рождения:" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Адрес:" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Место работы:" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Отделение:" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Полис:" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="date" GridPane.columnIndex="1">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="analisNumber" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="analis" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="pacientName" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="birthDate" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="adress" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="organization" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="section" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="policy" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Паспорт:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" text="Табельный №" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="passport" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="cardNum" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <GridPane VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" prefWidth="650.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label id="small-label" text="Клинический диагноз:">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="diagnosis" wrapText="true" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" text="Протокол исследования:" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="protocol" wrapText="true" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" text="Заключение:" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="conclusion" wrapText="true" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <VBox>
+         <children>
+            <Label id="small-label" text="Гистологическое исследование:">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox>
+               <children>
+                  <Label id="small-label" fx:id="gistCount" text="0 кусочков;">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="small-label" fx:id="gistFrom" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Label id="small-label" text="Цитологическое исследование:">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox>
+               <children>
+                  <Label id="small-label" fx:id="histCount" text="0 стёкол;">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="small-label" fx:id="histFrom" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label id="small-label" text="Врач:">
+               <HBox.margin>
+                  <Insets left="100.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="doctor">
+               <HBox.margin>
+                  <Insets right="200.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" text="Телефон:">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="small-label" fx:id="phone">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</VBox>

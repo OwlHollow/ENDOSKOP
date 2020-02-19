@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="dialog" alignment="TOP_CENTER" onKeyPressed="#onKeyPressed" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.ConfirmationDialogViewController">
+   <children>
+      <Label id="title" text="Сохранить данные исследования?">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+      <Label id="medium-label" text="Enter - сохранить, Escape - отмена">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

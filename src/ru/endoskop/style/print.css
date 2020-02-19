@@ -1,0 +1,19 @@
+#medium-label{
+    -fx-font-size: 12px;
+}
+
+#small-label{
+    -fx-font-size: 10px;
+}
+
+#print-title{
+    -fx-font-size: 12pt;
+}
+
+.table-view{
+    -fx-font-size: 10px;
+}
+
+.table-view .column-header-background .label .text{
+    -fx-font-size: 10px;
+}

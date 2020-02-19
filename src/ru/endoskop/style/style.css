@@ -1,0 +1,127 @@
+#root{
+    -fx-background-color: #F0F8FF;
+}
+
+#dialog{
+    -fx-background-color: #F0F8FF;
+    -fx-border-color: #4EA6A6;
+    -fx-border-width: 5;
+}
+
+.label{
+    -fx-font-family: "System";
+    -fx-font-size: 12pt;
+}
+
+#header{
+    -fx-background-color: linear-gradient(from 0px 0px to 0px 50px, white, darkgray);
+}
+
+#card-medium-label{
+    -fx-font-size: 12pt;
+}
+
+#card-small-label{
+    -fx-font-size: 10pt;
+}
+
+#card-Text-Field{
+    -fx-background-color: transparent;
+    -fx-border-style: hidden hidden solid hidden;
+}
+
+#title{
+    -fx-font-size: 24pt; 
+}
+
+#medium-label{
+    -fx-font-size: 18pt;
+}
+
+#small-label{
+    -fx-font-size: 14pt;
+}
+
+#card-footer{
+    -fx-font-size: 14pt;
+}
+
+#user-button{
+    -fx-font-size: 10pt;
+    -fx-background-color: aliceblue;
+    -fx-border-color: white;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#user-button:hover{
+    -fx-background-color: #4EA6A6;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: 
+        linear-gradient(from 0px 0px to 0px 50px, white, darkgray);
+    -fx-border-color: black;
+}
+
+.table-view .column-header-background .label{
+    -fx-font-size: 12px;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler{
+    -fx-background-color: transparent;
+}
+
+.table-column{
+  -fx-alignment: CENTER;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell{
+    -fx-background-color: #F0F8FF;
+    -fx-table-cell-border-color: black;
+}
+
+.table-row-cell.text{
+    -fx-fill: black;
+    -fx-font-size: 12pt;
+}
+
+.table-row-cell:focused{
+    -fx-background-color: #4EA6A6;
+}
+
+#card{
+    -fx-background-color: white;
+}
+
+#card .table-view{
+    -fx-border-color: black;
+    -fx-border-width: 2 0 2 0;
+    -fx-border-style: dashed;
+    -fx-background-color: white;
+}
+
+#card .table-row-cell:focused{
+    -fx-background-color: #4EA6A6;
+}
+
+#card .table-view .column-header-background{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-style: dashed;
+}
+
+#card .table-row-cell{
+    -fx-background-color: white;
+    -fx-table-cell-border-color: white;
+}
+
+#card .table-row-cell:focused{
+    -fx-background-color: white;
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="root" fx:id="root" alignment="TOP_CENTER" onKeyPressed="#keyPressedOnRoot" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.HistocytologyViewController">
+   <children>
+      <GridPane alignment="CENTER" hgap="10.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="NEVER" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Дата:">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Номер Исслед:" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Пациент:" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Дата рождения:" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label id="small-label" fx:id="date" GridPane.columnIndex="1" />
+            <Label id="small-label" fx:id="analisNumber" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label id="small-label" fx:id="pacientName" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="small-label" fx:id="birthDate" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="small-label" fx:id="diagnosis" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="small-label" fx:id="disease" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="small-label" text="Клинический диагноз:" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label id="small-label" text="Эндоскопический диагноз:" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <GridPane VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" prefWidth="650.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+         </rowConstraints>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <VBox>
+         <children>
+            <Label text="Гистологическое исследование:">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox>
+               <children>
+                  <Label text="Сколько кусочков:" />
+                  <TextField id="card-Text-Field" fx:id="gistCountTF" onKeyPressed="#keyPressedOnTF" prefHeight="25.0" prefWidth="96.0" text="0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Откуда:" />
+                  <TextField id="card-Text-Field" fx:id="gistFromTF" onKeyPressed="#keyPressedOnTF" prefHeight="25.0" prefWidth="158.0" />
+               </children>
+            </HBox>
+            <Label text="Цитологическое исследование:">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox>
+               <children>
+                  <Label text="Сколько стёкол:" />
+                  <TextField id="card-Text-Field" fx:id="histCountTF" onKeyPressed="#keyPressedOnTF" prefHeight="25.0" prefWidth="112.0" text="0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Откуда:" />
+                  <TextField id="card-Text-Field" fx:id="histFromTF" onKeyPressed="#keyPressedOnTF" prefHeight="25.0" prefWidth="158.0" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</VBox>

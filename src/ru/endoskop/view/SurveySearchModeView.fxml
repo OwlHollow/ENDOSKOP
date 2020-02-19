@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="350.0" minWidth="450.0" onKeyPressed="#keyPressed" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.SurveySearchModeViewController">
+   <top>
+      <HBox id="header" alignment="CENTER" prefHeight="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="title" fx:id="title" text="Поиск" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox fx:id="root" alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="medium-label" fx:id="fromBegin" text="С начала базы" />
+            <Label id="medium-label" fx:id="fromEnd" styleClass="medium-label" text="С конца базы" />
+            <Label id="medium-label" fx:id="fromNum" styleClass="medium-label" text="С номера" />
+            <Label id="medium-label" fx:id="fromFam" styleClass="medium-label" text="С фамилии" />
+            <Label id="medium-label" fx:id="forDate" styleClass="medium-label" text="По дате" />
+            <Label id="medium-label" fx:id="forBolezn" styleClass="medium-label" text="По болезни" />
+            <Label id="medium-label" fx:id="forConclusion" styleClass="medium-label" text="По исследованию" />
+            <Label id="medium-label" fx:id="forDoctor" styleClass="medium-label" text="По врачу" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="250.0" minWidth="450.0" onKeyPressed="#keyPressed" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.AdminMenuViewController">
+   <center>
+      <VBox id="root" alignment="CENTER" focusTraversable="true" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="medium-label" fx:id="controlUsers" text="Контроль пользователей">
+               <font>
+                  <Font name="System" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label id="medium-label" fx:id="dictionaries" text="Работа со справочниками">
+               <font>
+                  <Font name="System" size="20.0" />
+               </font>
+            </Label>
+            <Label id="medium-label" fx:id="backupData" text="Резервное копирование данных">
+               <font>
+                  <Font name="System" size="20.0" />
+               </font>
+            </Label>
+            <Label id="medium-label" fx:id="exit" text="Выход">
+               <font>
+                  <Font name="System" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox id="header" alignment="CENTER" maxHeight="-Infinity" minHeight="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="title" text="Главное меню">
+                <font>
+                  <Font name="System" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

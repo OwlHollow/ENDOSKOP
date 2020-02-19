@@ -1,0 +1,9 @@
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-style: hidden hidden solid hidden;
+}
+
+.text-area{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}

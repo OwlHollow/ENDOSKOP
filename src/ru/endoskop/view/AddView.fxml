@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" alignment="CENTER" minHeight="670.0" minWidth="740.0" onKeyPressed="#keyPressedOnRoot" stylesheets="@../style/addView.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.AddViewController">
+   <children>
+      <Label id="title" fx:id="issledLabel" stylesheets="@../style/style.css" text="Исследование №">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label id="small-label" text="Фамилия:">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="famTF" accessibleText="Фамилия" maxHeight="-Infinity" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="Имя:">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Label>
+            <TextField fx:id="nameTF" accessibleText="Имя" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="Отчество:" />
+            <TextField fx:id="fathersNameTF" accessibleText="Отчество" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label id="small-label" text="Исследование:" />
+            <TextField fx:id="analisTF" accessibleText="Исследование" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label id="small-label" text="Дата рождения:" />
+            <TextField fx:id="birthDateTF" accessibleText="Дата рождения" onKeyReleased="#keyReleasedOnDateTF"  onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="Паспорт:" />
+            <TextField fx:id="passportTF" accessibleText="Паспорт" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="Полис:" />
+            <TextField fx:id="polisTF" accessibleText="Полис" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label id="small-label" text="Адрес:" />
+            <TextField fx:id="adressTF" accessibleText="Адрес" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="Место работы:" />
+            <TextField fx:id="jobTF" accessibleText="Место работы" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="Табельный №" />
+            <TextField fx:id="tabNumTF" accessibleText="Табельный №" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label id="small-label" text="Отделение:" />
+            <TextField fx:id="otdelenieTF" accessibleText="Отделение" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="Код болезни:" />
+            <TextField fx:id="boleznCodeTF" accessibleText="Код болезни" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="№ счёта/код услуг:" />
+            <TextField fx:id="billNumTF" accessibleText="№ счёта/код услуг" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <Label id="medium-label" alignment="CENTER" text="Клинический диагноз:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="diagnozTF" accessibleText="Клинический диагноз" onKeyPressed="#keyPressedOnTF">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </TextField>
+      <Label id="medium-label" text="Протокол исследования:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </Label>
+      <TextArea fx:id="protokolTF" accessibleText="Протокол исследования" onKeyPressed="#keyPressedOnTF" prefHeight="106.0" prefWidth="714.0" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </TextArea>
+      <Label id="medium-label" text="Заключение:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </Label>
+      <HBox>
+         <children>
+            <Label text="Эндоскопический диагноз:" />
+            <TextField fx:id="zakluchenieTF" accessibleText="Заключение" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Label text="Описание диагноза:" />
+            <TextField fx:id="descrZakluchenie" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label id="medium-label" text="Рекомендация:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="commentTF" accessibleText="Рекомендации" onKeyPressed="#keyPressedOnTF">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </TextField>
+      <Label id="medium-label" text="Данные гистоцитологии:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="gistDataTF" accessibleText="Данные гистоцитологии" onKeyPressed="#keyPressedOnTF">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label id="small-label" text="Врач:" />
+            <TextField fx:id="doctorTF" accessibleText="Врач" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label id="small-label" text="Дата исследования:" />
+            <TextField fx:id="dateIssled" accessibleText="Дата исследования" onKeyReleased="#keyReleasedOnDateTF"  onKeyPressed="#keyPressedOnTF" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></TextField>
+            <Label id="small-label" alignment="CENTER_RIGHT" text="Примечание:" />
+            <TextField fx:id="statusTF" accessibleText="Примечание" alignment="CENTER_RIGHT" onKeyPressed="#keyPressedOnTF" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</VBox>

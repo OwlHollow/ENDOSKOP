@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="250.0" minWidth="450.0" onKeyPressed="#keyPressed" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.DoctorMenuViewController">
+   <center>
+      <VBox id="root" alignment="CENTER" focusTraversable="true" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="medium-label" fx:id="input" text="Ввод данных">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label id="medium-label" fx:id="search" text="Корректировка данных">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+            </Label>
+            <Label id="medium-label" fx:id="print" text="Обработка и вывод информации">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+            </Label>
+            <Label id="medium-label" fx:id="exit" text="Выход">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox id="header" alignment="CENTER" maxHeight="-Infinity" minHeight="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="title" text="Главное меню" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

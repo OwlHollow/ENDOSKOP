@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="350.0" minWidth="450.0" onKeyPressed="#keyPressed" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.DictionarySearchModeViewController">
+   <top>
+      <HBox id="header" alignment="CENTER" prefHeight="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="title" fx:id="title" text="Справочники" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox fx:id="root" alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="medium-label" fx:id="analis" text="Исследования" />
+            <Label id="medium-label" fx:id="disease" styleClass="medium-label" text="Болезни" />
+            <Label id="medium-label" fx:id="baseDisease" styleClass="medium-label" text="Виды болезней" />
+            <Label id="medium-label" fx:id="street" styleClass="medium-label" text="Улицы" />
+            <Label id="medium-label" fx:id="partions" styleClass="medium-label" text="Отделения" />
+            <Label id="medium-label" fx:id="doctors" styleClass="medium-label" text="Врачи" />
+            <Label id="medium-label" fx:id="protocol" styleClass="medium-label" text="Протокол" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

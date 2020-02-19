@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.UserSearchViewController">
+   <children>
+      <TableView fx:id="table" onKeyPressed="#onKeyPressed" VBox.vgrow="ALWAYS">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox id="header" alignment="CENTER" minHeight="50.0" spacing="50.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button id="user-button" fx:id="addUser" mnemonicParsing="false" onAction="#addClick" onKeyPressed="#onKeyPressed" text="Добавить пользователя" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Button>
+            <Button id="user-button" fx:id="updateUser" mnemonicParsing="false" onAction="#updateClick" onKeyPressed="#onKeyPressed" text="Обновить данные пользователя" HBox.hgrow="ALWAYS" />
+            <Button id="user-button" fx:id="deleteUser" mnemonicParsing="false" onAction="#deleteClick" onKeyPressed="#onKeyPressed" text="Удалить пользователя" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

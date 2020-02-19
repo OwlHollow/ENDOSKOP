@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="250.0" minWidth="450.0" onKeyPressed="#onKeyPressed" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.endoskop.view.LoginViewController">
+   <center>
+      <VBox id="root" alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" minWidth="10.0" />
+                <ColumnConstraints halignment="LEFT" maxWidth="266.0" minWidth="10.0" prefWidth="147.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="40.0" minHeight="40.0" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="40.0" minHeight="40.0" valignment="CENTER" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="40.0" minHeight="40.0" valignment="CENTER" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Label id="medium-label" text="Пользователь" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label id="medium-label" text="Пароль" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="userName" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="userPassword" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="enter_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#enterButtonAction" text="Войти" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </GridPane>
+            <Label id="small-label" fx:id="inputErrorLabel" textFill="#da0606" wrapText="true" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <HBox id="header" alignment="CENTER" maxHeight="-Infinity" prefHeight="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="title" text="Авторизация">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+</BorderPane>
